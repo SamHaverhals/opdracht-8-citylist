@@ -2,9 +2,14 @@ const a = ("https://backendcities.herokuapp.com/?cuid=hajIUIksk983LLP11112220&st
 fetch(a)
 
     .then(response => response.json())
-    .then(data => console.log(data));
+    .then(data => {
+        console.log(data);
 
-function addList(){
-    const c = document.createElement("div");
-    document.body.appendChild(c);
-};
+        for (const d of data) {
+            console.log(d.name);
+
+            const e = document.createElement("div");
+            e.innerHTML = d.name;
+            document.body.appendChild(e);
+        }
+    });
