@@ -1,0 +1,17 @@
+{
+  "name": "opdracht8-citylist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "query-string": "^6.14.1",
+    "save-dev": "0.0.1-security",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
+  }
+}
