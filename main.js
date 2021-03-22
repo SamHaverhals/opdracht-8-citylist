@@ -15,14 +15,4 @@ fetch(url)
         }
     });
 
-// const x = {
-//     a: (x)=>console.log(x)
-// };
-// console.log(x.a()); //1
-//
-// const y = [1,2,3];
-// console.log(y.)
 
-
-// const el = document.getElementById('d');
-// el.innerText = 'asdf';
