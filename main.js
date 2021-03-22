@@ -1,4 +1,6 @@
-const a = ("https://backendcities.herokuapp.com/?cuid=hajIUIksk983LLP11112220&start=1&size=30")
+const p = ;
+const startpoint = ((p - 1) * 30) + 1;
+const a = ("https://backendcities.herokuapp.com/?cuid=hajIUIksk983LLP11112220&start=${startpoint}&size=30");
 fetch(a)
 
     .then(response => response.json())
