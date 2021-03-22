@@ -1,6 +1,13 @@
-const p = 1;
+
+const queryString = require('query-string');
+
+
+const parsed = queryString.parse(location.search);
+const p = parsed.page; //page=3
 const startpoint = ((p - 1) * 30) + 1;
 const url = `https://backendcities.herokuapp.com/?cuid=hajIUIksk983LLP11112220&start=${startpoint}&size=30`;
+
+
 fetch(url)
     .then(function(response ) { return response.json()})
     .then(data => {
@@ -14,5 +21,3 @@ fetch(url)
             document.body.appendChild(e);
         }
     });
-
-
