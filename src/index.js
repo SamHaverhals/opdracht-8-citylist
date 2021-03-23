@@ -2,9 +2,9 @@
 const queryString = require('query-string');
 const parsed = queryString.parse(location.search);
 
-let p =1;
+let page =1;
 if (parsed.p){
-    p = parsed.p;
+    page = parsed.p;
 }
 
 
@@ -31,11 +31,11 @@ fetch(url)
 
 
 const back = document.createElement('a');
-back.href = `index.html?p=${(p - 1)}`;
+back.href = `index.html?p=${(page - 1)}`;
 back.innerText = 'Previous Page' + " ";
 
 const forward = document.createElement('a');
-forward.href = `index.html?p=${(parseInt(p) + 1)}`;
+forward.href = `index.html?p=${(parseInt(page) + 1)}`;
 forward.innerText = 'Next Page';
 
 const d = document.getElementById('states');
